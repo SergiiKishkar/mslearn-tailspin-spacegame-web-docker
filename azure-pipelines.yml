@@ -26,6 +26,11 @@ stages:
         tags: |
           $(tag)
 
+- script: |
+    ls -la  
+    cat $(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile
+  displayName: "View Dockerfile" 
+
 
 - stage: 'Deploy'
   displayName: 'Deploy the container'
