@@ -27,7 +27,6 @@ stages:
           $(tag)
 
     - script: |
-        ls -la  
         cat $(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile
         displayName: "View Dockerfile" 
 
